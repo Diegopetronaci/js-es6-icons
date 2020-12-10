@@ -6,93 +6,15 @@ $(document).ready(function () {
     const icone = [
       {
         name: "gatto",
-        prefix: "fas fa-cat",
-        type: "animale",
-        family: "",
+        prefix: "fas ",
+        type: "fa-cat",
+        family: "animale",
       },
       {
-        name: "verdura",
-        prefix: "fas fa-carrot",
-        type: "vegetale",
-        family: "",
-      },
-      {
-        name: "profilo",
-        prefix: "fas fa-user",
-        type: "profilo",
-        family: "",
-      },
-      {
-        name: "gatto",
-        prefix: "fas fa-cat",
-        type: "animale",
-        family: "",
-      },
-      {
-        name: "verdura",
-        prefix: "fas fa-carrot",
-        type: "vegetale",
-        family: "",
-      },
-      {
-        name: "profilo",
-        prefix: "fas fa-user",
-        type: "profilo",
-        family: "",
-      },
-      {
-        name: "gatto",
-        prefix: "fas fa-cat",
-        type: "animale",
-        family: "",
-      },
-      {
-        name: "verdura",
-        prefix: "fas fa-carrot",
-        type: "vegetale",
-        family: "",
-      },
-      {
-        name: "profilo",
-        prefix: "fas fa-user",
-        type: "profilo",
-        family: "",
-      },
-      {
-        name: "gatto",
-        prefix: "fas fa-cat",
-        type: "animale",
-        family: "",
-      },
-      {
-        name: "verdura",
-        prefix: "fas fa-carrot",
-        type: "vegetale",
-        family: "",
-      },
-      {
-        name: "profilo",
-        prefix: "fas fa-user",
-        type: "profilo",
-        family: "",
-      },
-      {
-        name: "gatto",
-        prefix: "fas fa-cat",
-        type: "animale",
-        family: "",
-      },
-      {
-        name: "verdura",
-        prefix: "fas fa-carrot",
-        type: "vegetale",
-        family: "",
-      },
-      {
-        name: "profilo",
-        prefix: "fas fa-user",
-        type: "profilo",
-        family: "",
+        name: "carota",
+        prefix: "fas",
+        type: "fa-carrot",
+        family: "vegetale",
       }
     ]
     console.log(icone);
@@ -132,12 +54,13 @@ $(document).ready(function () {
   ////////////////////////////////////////////////////////////////////////////////////Inizio Seconda Parte///////////////////////////////////////////////////
   // definiamo dei colori per le icone (blue, orange, purple)
 
-  const blue = `Style="color:blue"`;
+  /* const blue = `Style="color:blue"`;
   const orange = `Style="color:orange"`;
-  const purple = `Style="color:purple"`;
+  const purple = `Style="color:purple"`; */
 
   //aggiungiamo dei colori usando una funzione
-  function addColori(colore1, colore2, colore3, array) {
+
+  /* function addColori(colore1, colore2, colore3, array) {
 
     array.forEach(element => {
       if (element.type === element.profilo) {
@@ -150,6 +73,8 @@ $(document).ready(function () {
     });
   }
 
+  const aggiungiColore = addColori(blue, orange, purple, icone);
+  console.log(aggiungiColore); */
   //inseriamo le icone colorate nel container
 
 });
@@ -165,3 +90,11 @@ $(document).ready(function () {
 
 //3. funzione per ottenere da un array
 // tip: possiamo usarla nella funzione precedente oppure usare map senza creare questa funzione.
+
+
+
+
+
+//aiuto fabiola: 
+//per il colore dovresti aggiungere con map un nuovo attributo colore all'oggetto 
+//e quando fai il for each al posto di style="color:blue" cambi blue con il colore salvato nell'oggetto
