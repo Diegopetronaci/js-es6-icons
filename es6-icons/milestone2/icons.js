@@ -137,19 +137,9 @@ $(document).ready(function () {
   const purple = `Style="color:purple"`;
 
   //aggiungiamo dei colori usando una funzione
-  function addColori(colore1, colore2, colore3, element) {
-    /* switch (tipo) {
-      case animale:
-        colore1
-      break;
-      case vegetale:
-        colore2
-      break;
-      case profilo:
-        colore3
-      break;
-    } */
-    icone.forEach(element => {
+  function addColori(colore1, colore2, colore3, array) {
+
+    array.forEach(element => {
       if (element.type === element.profilo) {
         return colore1;
       } else if (element.type === element.vegetale) { 
