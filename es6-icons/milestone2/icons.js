@@ -5,17 +5,23 @@ $(document).ready(function () {
     // Creiamo array di oggetti per le icone con le seguenti proprieta: name, prefix, type, family 
     const icone = [
       {
-        name: "gatto",
+        name: "cat",
         prefix: "fas ",
-        type: "fa-cat",
+        type: "fa-",
         family: "animale",
       },
       {
-        name: "carota",
+        name: "carrot",
         prefix: "fas",
-        type: "fa-carrot",
+        type: "fa-",
         family: "vegetale",
-      }
+      },
+      {
+        name: "user",
+        prefix: "fas",
+        type: "fa-",
+        family: "profile",
+      },
     ]
     console.log(icone);
     // Selezioniamo il container icons
@@ -38,10 +44,10 @@ $(document).ready(function () {
     // tip: possiamo usare un ciclo foreach qui e destrutturare gli le proprieta degli elementi di un array
     // tip: il template literal ci puo aiutare con il markup
 
-    function myFunctions() {
+    function myFunctions(icons,icone) {
       icone.forEach(icona => {
         let markup = `<div>
-      <i class="${icona.prefix}" style="color:blue"></i>
+      <i class="${icona.prefix} ${icona.type + icona.name}" style="color:blue"></i>
       <div class="title">${icona.name}</div>
       </div>`;
         console.log(markup);
@@ -49,7 +55,7 @@ $(document).ready(function () {
       });
     };
 
-    const prova = myFunctions();
+    const prova = myFunctions(icons, icone);
   });
   ////////////////////////////////////////////////////////////////////////////////////Inizio Seconda Parte///////////////////////////////////////////////////
   // definiamo dei colori per le icone (blue, orange, purple)
@@ -77,8 +83,13 @@ $(document).ready(function () {
   console.log(aggiungiColore); */
   //inseriamo le icone colorate nel container
 
+  const newColorIcon = icone.map((icona) => {
+    if (icona.family == "vegetale") {
+      icona.push('color: "orange"');
+      console.log(newColorIcon);
+    }
+  })
 });
-
 
 /* ---- FUNCTIONS ----*/
 //1. Funzione milestone 1
