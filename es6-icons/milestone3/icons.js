@@ -18,12 +18,12 @@ $(document).ready(function () {
     new Icons("user", "fas", "fa-user", "Profile"),
     new Icons("user", "fas", "fa-horse", "Animal"),
     new Icons("ninja", "fas", "fa-user-ninja", "Profile"),
-    new Icons("cat", "fas", "fa-cat", "Animal"),
+    new Icons("dog", "fas", "fa-dog", "Animal"),
     new Icons("carrot", "fas", "fa-carrot", "Vegetable"),
     new Icons("user", "fas", "fa-user", "Profile"),
     new Icons("user", "fas", "fa-horse", "Animal"),
     new Icons("ninja", "fas", "fa-user-ninja", "Profile"),
-    new Icons("cat", "fas", "fa-cat", "Animal"),
+    new Icons("dragon", "fas", "fa-dragon", "Animal"),
     new Icons("carrot", "fas", "fa-carrot", "Vegetable"),
     new Icons("user", "fas", "fa-user", "Profile"),
     new Icons("user", "fas", "fa-horse", "Animal"),
@@ -114,7 +114,7 @@ $(document).ready(function () {
     if (scelta != "") {
       stampatore(arrayFilter, container);
     } else {
-      stampatore(icone, container);
+      stampatore(newArrey, container);
     }
   });
     
