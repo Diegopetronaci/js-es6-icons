@@ -16,17 +16,20 @@ $(document).ready(function () {
     new Icons("cat", "fas", "fa-cat", "Animal"),
     new Icons("carrot", "fas", "fa-carrot", "Vegetable"),
     new Icons("user", "fas", "fa-user", "Profile"),
-    new Icons("user", "fas", "fa-horse", "Animal"),
+    new Icons("horse", "fas", "fa-horse", "Animal"),
+    new Icons("pepper-hot", "fas", "fa-pepper-hot", "Vegetable"),
     new Icons("ninja", "fas", "fa-user-ninja", "Profile"),
     new Icons("dog", "fas", "fa-dog", "Animal"),
-    new Icons("carrot", "fas", "fa-carrot", "Vegetable"),
-    new Icons("user", "fas", "fa-user", "Profile"),
-    new Icons("user", "fas", "fa-horse", "Animal"),
+    new Icons("lemon", "fas", "fa-lemon", "Vegetable"),
+    new Icons("users", "fas", "fa-users", "Profile"),
+    new Icons("horse", "fas", "fa-horse", "Animal"),
+    new Icons("apple", "fas", "fa-apple-alt", "Vegetable"),
     new Icons("ninja", "fas", "fa-user-ninja", "Profile"),
     new Icons("dragon", "fas", "fa-dragon", "Animal"),
-    new Icons("carrot", "fas", "fa-carrot", "Vegetable"),
-    new Icons("user", "fas", "fa-user", "Profile"),
-    new Icons("user", "fas", "fa-horse", "Animal"),
+    new Icons("seedling", "fas", "fa-seedling", "Vegetable"),
+    new Icons("user-friends", "fas", "fa-user-friends", "Profile"),
+    new Icons("hippo", "fas", "fa-hippo", "Animal"),
+    new Icons("leaf", "fas", "fa-leaf", "Vegetable"),
     new Icons("ninja", "fas", "fa-user-ninja", "Profile"),
   ]
   /* console.log(icone); */
@@ -104,14 +107,15 @@ $(document).ready(function () {
     const scelta = elSelect.options[elSelect.selectedIndex].value;
     console.log(scelta);
 
-    const arrayFilter = newArrey.filter(icona => icona.family == scelta)
-    console.log(arrayFilter);
+    /* const arrayFilter = newArrey.filter(icona => icona.family == scelta)
+    console.log(arrayFilter); */
   
     localContainer.innerHTML = "";
 
     /* stampatore(arrayFilter, container); */
 
     if (scelta != "") {
+      const arrayFilter = newArrey.filter(icona => icona.family == scelta)
       stampatore(arrayFilter, container);
     } else {
       stampatore(newArrey, container);
